@@ -1,7 +1,7 @@
 from fastapi.testclient import TestClient
-from application.main import create_app
+from application.main import app
 
-client = TestClient(create_app())
+client = TestClient(app)
 
 
 def test_index():
